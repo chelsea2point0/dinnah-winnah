@@ -621,7 +621,7 @@ function getMealPlan() {
 
   const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
-
+  //<img src="${recipe.Image}" class="card-img-top" alt="${recipe.Name}">
   const allCardsHTML = randomMeals.map((recipe, index) => {
     // Build cards based on selected meals
     return `
@@ -630,7 +630,6 @@ function getMealPlan() {
                 <div class="card-header bg-success text-white">
                   ${weekdays[index]}
                 </div>
-                <img src="${recipe.Image}" class="card-img-top" alt="${recipe.Name}">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${recipe.Name}</h5>
                     <a href="${recipe.Recipe}" class="btn btn-warning mt-auto" target="_blank" rel="noopener noreferrer">View Recipe</a>
